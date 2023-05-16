@@ -1,0 +1,133 @@
+body{
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0;
+    line-height: 1.6;
+    background-color: grey;
+
+}
+
+
+
+.encabezado{
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+}
+
+.encabezado h2{
+    font-size: 150%;
+    color: white;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.encabezado img{
+    margin-left: 90%;
+    height: 25px;
+    margin-top: 2%; 
+}
+
+.promo{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: relative;
+    z-index: 2;
+    /*index coloca el contenedor encima de los otros no funciona si el elemento no esta posicionado con position: relative*/
+ 
+}
+/*
+h1
+span (1),
+span (2){
+    font-size: 35%
+}
+*/
+.promo h1{
+    font-size: 2.5rem;
+    margin-left: 10%;
+    color: white;
+    font-weight: 700;
+}
+
+
+.promo p{
+    font-size: 1.5rem;
+    margin-left: 10%;
+    color: white;
+    font-weight: 50;
+}
+
+button{
+    margin-left: 10%;
+    display: inline-block;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10 px 0;
+    width: 200px;
+    background-color: white ;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    transition: 150ms;
+    margin-top: 40px;
+}
+ 
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    transform:translate(0,-5px) ;
+}
+
+  
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+
+}
+
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    /*color de la capa*/
+    opacity: 0.5;
+    /*nivel de opacidad*/
+    mix-blend-mode: overlay;
+    /*oscurecer o aclarar la capa dependiendo el color de fondo*/
+}
+
+
+.redes soc{
+    align-items: left;
+    justify-content: space-between;
+}
+
+
+footer{
+    margin-left: 2%;
+    margin-top: 10%;
+    position: relative;
+    z-index: 2;  
+    
+}
